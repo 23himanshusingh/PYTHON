@@ -1,0 +1,15 @@
+n=int(input())
+for i in range(1,n+1):
+        l1=len(bin(n)[2:])
+        l11=len(bin(i)[2:])
+        l2=len(oct(n)[2:])
+        l22=len(oct(i)[2:])
+        l3=len(hex(n)[2:])
+        l33=len(hex(i)[2:])
+        l4=len(str(n))
+        l44=len(str(i))
+        
+        print((l4-l44)*" "+str(i),end=" ")
+        print((l2-l22)*" "+oct(i)[2:],end=" ")
+        print((l3-l33)*" "+hex(i)[2:],end=" ")
+        print((l1-l11)*" "+bin(i)[2:])

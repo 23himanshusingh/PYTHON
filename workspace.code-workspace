@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "python",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"SUBSTRING.C": "cpp"
+		}
+	}
+}

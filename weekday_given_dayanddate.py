@@ -1,0 +1,18 @@
+n=int(input())
+d={0:"Sunday",1:"Monday",2:"Tuesday",3:"Wednesday",4:"Thursday",5:"Friday",6:"Saturday"}
+w=int(input())
+m=int(input())
+diff=abs(n-m)%7
+if(n>m):
+    if(diff>w):
+        x=diff-w
+        s1=d[6-(x-1)]
+    else:
+        s1=d[w-diff]
+else:
+    if(diff>(6-w)):
+        x=diff-6+w
+        s1=d[x-1]
+    else:
+        s1=d[w+diff]
+print(s1)

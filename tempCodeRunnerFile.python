@@ -1,0 +1,14 @@
+def checkAttack(qr,qc,opr,opc):
+    if qr==opr:
+        return True
+    elif qc==opc:
+        return True
+    elif abs(qc-opc)==abs(qr-opr):
+        return True
+    else:
+        return False
+n=int(input("enter no of queens:"));lis=[]
+for i in range(n):
+    t=tuple(map(int,(input().split())))
+    lis.append(t)
+print(lis)
